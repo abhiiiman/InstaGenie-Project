@@ -30,7 +30,7 @@ screen_height = w.winfo_screenheight()
 x_coordinate = (screen_width/2)-(width_of_window/2)
 y_coordinate = (screen_height/2)-(height_of_window/2)
 w.geometry("%dx%d+%d+%d" %(width_of_window,height_of_window,x_coordinate,y_coordinate))
-# w.overrideredirect(1) #for hiding titlebar
+w.overrideredirect(1) #for hiding titlebar
 
 # creating the background canvas with image here.
 canvas = Canvas(w,bg = "white",height = 630,width = 960,bd = 0,highlightthickness = 0,relief = "ridge")
